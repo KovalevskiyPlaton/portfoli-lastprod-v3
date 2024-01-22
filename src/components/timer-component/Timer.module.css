@@ -1,0 +1,105 @@
+.flex__container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 120rem;
+}
+
+.timDescContain{
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.timDescContain > h4{
+    color: white;
+    display: inline-flex;
+    margin-left: 45rem;
+    margin-bottom: 11rem;
+}
+
+.timDescContain > span{
+    font-size: 35rem;
+}
+
+.flex__item {
+     height: 140rem;
+     width: 140rem;
+     position: relative;
+     margin-left: 30rem;
+}
+
+.img__item{
+     border-radius:5px;
+     width: 140rem;
+     height: 140rem;
+     position: absolute;
+
+}
+
+.img__item__floor{
+    border-radius:5rem;
+    width: 138rem;
+    height: 179rem;
+    position: absolute;
+    transform: rotateX(63deg) rotateZ(8deg);
+    border-radius: 50rem;
+    margin-top: 99rem;
+    margin-left: -104rem;
+    opacity: 0.8;
+}
+
+.head__timer{
+    margin-left: 10px;
+    color: rgb(234, 94, 17);
+    font-style: italic;
+    font-size: 25rem;
+
+
+}
+
+.descr{
+     position: relative;
+     color: rgb(255, 255, 255);
+     font-weight: bold;
+     font-size: 80rem;
+     top:15%;
+
+}
+
+.descr__rotated{
+    position: absolute;
+    color: rgb(241, 195, 145);
+    font-weight: bold;
+    font-size: 80rem;
+    margin-top: 130rem;
+    margin-left: -75rem;
+    transform: rotateX(230deg);
+    z-index: -2;
+    opacity: 0.9;
+}
+
+.flex__container > h1 {
+    font-size: 30rem;
+    color: white;
+}
+
+@media screen and (max-width: 440px) {
+    .flex__container{
+        margin-top:50rem;
+    }
+
+    .flex__item {
+        margin-top:150rem;
+        margin-left: 120rem;
+    }
+    .timDescContain{
+        margin-right: 150rem;
+        margin-bottom: -150rem;
+    }
+
+}

@@ -1,0 +1,14 @@
+.GeneralProfile__container{
+    display: grid;
+    grid-template-areas:   'section-general-description section-general-background';                           ;
+    padding: 20rem;
+}
+
+.GeneralProfile__background{
+    grid-area:section-general-background;
+
+}
+.GeneralProfile__description{
+    grid-area:section-general-description;
+}
+

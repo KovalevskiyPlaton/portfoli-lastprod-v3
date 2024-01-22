@@ -1,0 +1,93 @@
+.profile___section{
+    display: flex;
+    max-width: 100%;
+    flex-wrap: nowrap;
+}
+
+.general__container{
+    display: flex;
+    position: relative;
+    padding: 2.8rem;
+    border-radius: 50%;
+    margin: 162.25rem 110rem  auto auto;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.center{
+    margin: auto auto -139rem 0;
+    width: 272rem;
+    height: 272rem;
+    border-radius: 50%;
+}
+
+.bird__container {
+    display: block;
+    position: absolute;
+    top: 50%; left: 50%;
+    width: 0;
+}
+
+.birdImg img{
+    width: 10rem;
+    height: 10rem;
+    animation: birdAround 4s ease-in infinite;
+}
+.birdImg { display: flex; width: 100%; }
+.deg13 { transform: rotate(13.8462deg) translate(calc(300rem/2)) rotate(-13.8462deg); }
+.deg27 { transform: rotate(27.6923deg) translate(calc(300rem/2)) rotate(-27.6923deg); }
+.deg41 { transform: rotate(41.5385deg) translate(calc(300rem/2)) rotate(-41.5385deg); }
+.deg55 { transform: rotate(55.3846deg) translate(calc(300rem/2)) rotate(-55.3846deg);}
+.deg69 { transform: rotate(69.2308deg) translate(calc(300rem/2)) rotate(-69.2308deg);}
+.deg83 { transform: rotate(83.0769deg) translate(calc(300rem/2)) rotate(-83.0769deg);}
+.deg96 { transform: rotate(96.9231deg) translate(calc(300rem/2)) rotate(-96.9231deg);}
+.deg110 { transform: rotate(110.7692deg) translate(calc(300rem/2)) rotate(-110.7692deg);}
+.deg124 { transform: rotate(124.6154deg) translate(calc(300rem/2)) rotate(-124.6154deg);}
+.deg138 { transform: rotate(138.4615deg) translate(calc(300rem/2)) rotate(-138.4615deg);}
+.deg152 { transform: rotate(152.3077deg) translate(calc(300rem/2)) rotate(-152.3077deg);}
+.deg166 { transform: rotate(166.1538deg) translate(calc(300rem/2)) rotate(-166.1538deg);}
+.deg180 { transform: rotate(180.0000deg) translate(calc(300rem/2)) rotate(-180.0000deg); }
+.deg193 { transform: rotate(193.8462deg) translate(calc(300rem/2)) rotate(-193.8462deg);}
+.deg207 { transform: rotate(207.6923deg) translate(calc(300rem/2)) rotate(-207.6923deg);}
+.deg221 { transform: rotate(221.5385deg) translate(calc(300rem/2)) rotate(-221.5385deg);}
+.deg235 { transform: rotate(235.3846deg) translate(calc(300rem/2)) rotate(-235.3846deg);}
+.deg249 { transform: rotate(249.2308deg) translate(calc(300rem/2)) rotate(-249.2308deg);}
+.deg263 { transform: rotate(263.0769deg) translate(calc(300rem/2)) rotate(-263.0769deg);}
+.deg276 { transform: rotate(276.9231deg) translate(calc(300rem/2)) rotate(-276.9231deg);}
+.deg290 { transform: rotate(290.7692deg) translate(calc(300rem/2)) rotate(-290.7692deg);}
+.deg304 { transform: rotate(304.6154deg) translate(calc(300rem/2)) rotate(-304.6154deg);}
+.deg318 { transform: rotate(318.4615deg) translate(calc(300rem/2)) rotate(-318.4615deg);}
+.deg332 { transform: rotate(332.3077deg) translate(calc(300rem/2)) rotate(-332.3077deg);}
+.deg346 { transform: rotate(346.1538deg) translate(calc(300rem/2)) rotate(-346.1538deg);}
+.deg360 { transform: rotate(360.0000deg) translate(calc(300rem/2)) rotate(-360.0000deg); }
+
+.bird__container {
+    display: flex;
+    position: relative;
+    animation:  rotateThis  20s  ease-in-out infinite;
+    right: 25px;
+}
+
+@keyframes rotateThis {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes birdAround{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+
+}
+
+@media screen and (max-width: 440px) {
+    .profile___section{
+        margin-left: -450rem;
+    }
+}

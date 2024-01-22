@@ -1,0 +1,80 @@
+.wrapperDesc__container{
+      box-sizing: border-box;
+ }
+
+.container__descr{
+    position: absolute;
+    font-size: 33rem;
+    width: 850rem;
+    height: 80%;
+    animation: showContent 3s linear;
+}
+
+h1{
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+button{
+    background-color: transparent;
+    border: .0001rem;
+
+}
+
+.wrapperDesc__container, span{
+    color: white;
+    font-size: 25rem;
+    margin-left: 30rem;
+}
+
+.ailineMinusPlus{
+    display: flex;
+    border-radius: 50%;
+    background-color: white;
+    width: 45rem;
+    height: 45rem;
+    border-color: black;
+
+}
+
+.contacts__section{
+    margin-left: 25%;
+    margin-top: 50rem;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+}
+
+.contacts_item{
+    position: relative;
+    display: flex;
+}
+.contacts_item:hover{
+    cursor: pointer;
+}
+
+.aStyleProf{
+    color: white;
+    text-decoration: none;
+    font-style: italic;
+}
+
+@keyframes showContent  {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .container__descr{
+        width: 510rem;
+    }
+}

@@ -1,0 +1,38 @@
+.cards__item{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin-bottom: 650rem;
+    margin-top: 50rem;
+    width: 400rem;
+    margin-left: 250rem;
+ }
+
+.button__showMore {
+    position: relative;
+    width: 387rem;
+    height: 100rem;
+    font-size:40rem;
+    color:white;
+    margin-right: -380rem;
+    margin-top: 20rem;
+    background-color: #ff7c00;
+    border-radius: 10rem;
+}
+.button__showMore:hover {
+    background-color: #d94f13;
+    transition: background-color 1s;
+    cursor: pointer;
+
+}
+
+
+@media screen and (max-width: 440px) {
+    .cards__item{
+        margin-right: 200rem;
+    }
+    .button__showMore{
+        margin-right: -180rem;
+    }
+
+}

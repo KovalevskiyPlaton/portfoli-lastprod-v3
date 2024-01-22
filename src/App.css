@@ -1,0 +1,32 @@
+.App{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-areas:   'section-head-panel'
+                           'display-section-panel';
+    padding: 20rem;
+}
+
+.head__section__panel{
+    grid-row: 1;
+    grid-area:section-head-panel;
+    width: 1051rem;
+}
+
+.display__section{
+    grid-area:display-section-panel;
+}
+
+.second__section_descr{
+    width: 409rem;
+    grid-area:section-descr-panel;
+}
+
+.background__container{
+    display: flex;
+    position: absolute;
+}
+
+.background__wrapper{
+    z-index: -1;
+}
+

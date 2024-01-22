@@ -1,0 +1,21 @@
+.button__top {
+    position:fixed;
+    top:85%;
+    left: 90%;
+    z-index:30000;
+    color: white;
+    font-size: 25rem;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 440px) {
+    .button__top{
+        right: 50%;
+        width: 56rem;
+        height: 120rem;
+    }
+
+
+}

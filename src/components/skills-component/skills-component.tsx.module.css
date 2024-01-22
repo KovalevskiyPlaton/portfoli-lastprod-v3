@@ -1,0 +1,20 @@
+.skills__container{
+    display: flex;
+    justify-content: center;
+    margin-top: 90rem;
+}
+
+.skills__wrapper{
+    display: flex;
+}
+
+.skills__item{
+    display: flex;
+}
+
+@media screen and (max-width: 440px) {
+    .skills__container{
+        margin-right: 160rem;
+    }
+
+}
