@@ -1,13 +1,14 @@
 import styleMyselfDescr from './myself-description.module.css'
-import {FC} from 'react';
-import {useState} from "react";
-// import {AiFillMinusCircle} from 'react-icons/ai';
-// import {AiFillPlusCircle} from 'react-icons/ai';
-import profileInfo from "../../../types/profileInfo.ts";
-// import {SlSocialVkontakte} from 'react-icons/sl';
-// import { LiaTelegramPlane } from "react-icons/lia";
-// import { LiaWhatsapp } from "react-icons/lia";
+import {FC} from 'react'
+import {useState} from "react"
+import profileInfo from "../../../types/profileInfo.ts"
 import profDitalis from '../../../assets/other/ProfilDetails.pdf'
+import plusIcon from  '../../../assets/icons/plusIcon.png'
+import minusIcon from  '../../../assets/icons/minusIcon.png'
+import telegrammIcon from '../../../assets/icons/telega.png'
+import whatAppIcon from '../../../assets/icons/whatSappIcon.png'
+import vkIcon from '../../../assets/icons/vkIcon.png'
+
 const  MySelfDescr:FC<profileInfo> = ({
                                            profileHeader
                                           ,profileDescLern
@@ -21,8 +22,8 @@ const [visibleContent, setVisibleContent ]=useState(false)
 
       <div className={styleMyselfDescr.wrapperDesc__container}>
           <h1>     {profileHeader}   </h1>
-          <button  onClick={ toggleShow } style={{color:'white'}}>{visibleContent ? '+' :
-              '-'}</button>
+          <button  onClick={ toggleShow }>{visibleContent ? <img src={minusIcon} className={styleMyselfDescr.icons_settings} alt={'показать больше'}/> :
+              <img src={plusIcon} className={styleMyselfDescr.icons_settings} alt={'показать больше'}/>}</button>
           {visibleContent?
               <div className={`${styleMyselfDescr.container__descr}`}>
                   <p>&emsp;{profileDescLern}</p>
@@ -33,13 +34,13 @@ const [visibleContent, setVisibleContent ]=useState(false)
                       </p>
                <div className={styleMyselfDescr.contacts__section}>
                         <div className={styleMyselfDescr.contacts_item}>
-                            <a className={styleMyselfDescr.aStyleProf} href="https://vk.com/id18765086">VK</a>
+                            <a className={styleMyselfDescr.aStyleProf} href="https://vk.com/id18765086"><img src={vkIcon} className={styleMyselfDescr.contacts_item}/></a>
                         </div>
                    <div className={styleMyselfDescr.contacts_item}>
-                       <a className={styleMyselfDescr.aStyleProf} href="https://t.me/Kovalevskiy_PV">Telega</a>
+                       <a className={styleMyselfDescr.aStyleProf} href="https://t.me/Kovalevskiy_PV"><img src={telegrammIcon} className={styleMyselfDescr.contacts_item}/></a>
                    </div>
                    <div className={styleMyselfDescr.contacts_item}>
-                       <a className={styleMyselfDescr.aStyleProf} href="https://wa.me/+79787936493">WhatA</a>
+                       <a className={styleMyselfDescr.aStyleProf} href="https://wa.me/+79787936493"><img src={whatAppIcon} className={styleMyselfDescr.contacts_item}/></a>
                    </div>
                </div>
               </div>:null

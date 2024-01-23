@@ -1,6 +1,6 @@
 import backTopStyle  from './back-top.module.css'
 import {useEffect, useState} from "react";
-// import { LiaLongArrowAltUpSolid } from "react-icons/lia"
+import ArrowTop from "../../assets/icons/Arrow.png"
 
 function BackTopButton() {
     const [backTopButton, setBackTopButton] = useState(false)
@@ -25,7 +25,7 @@ function BackTopButton() {
 
         <>
             {backTopButton && (
-                <button className={backTopStyle.button__top}  onClick={scrollUp}>ВВЕРХ</button>
+                <button className={backTopStyle.button__top}  onClick={scrollUp}><img className={backTopStyle.arrowStyle__settings} src={ArrowTop} alt={''}/></button>
             )
             }
         </>

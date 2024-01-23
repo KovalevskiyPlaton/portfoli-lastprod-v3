@@ -1,6 +1,6 @@
 import styleProfile from './profile-background.module.css'
 import bird from '../../../assets/profile-info/v-21.gif'
-import card from '../../../assets/profile-info/card_4.png'
+import card from '../../../assets/profile-info/profile_image.png'
 
 
  function ProfileBackground() {

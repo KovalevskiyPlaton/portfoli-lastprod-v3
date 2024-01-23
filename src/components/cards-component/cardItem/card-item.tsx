@@ -6,9 +6,9 @@ import {Link} from "react-router-dom";
 const CardItem:FC<CardType>=(
     {
         FirstTitlePage,
-        img,
         SecondHeaderPage,
         SecondContext,
+        img,
         srcProject
     }
 
@@ -28,7 +28,7 @@ const CardItem:FC<CardType>=(
                             </div>
                         </div>
                         <div className={styleCard.card_back}>
-                            <img src={`../src/assets/cards/${img}`} alt={''}/>
+                            <img src={`${img}`} alt={''}/>
                         </div>
                     </div>
                 </div>

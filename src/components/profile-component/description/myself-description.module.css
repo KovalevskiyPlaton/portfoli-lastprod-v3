@@ -30,14 +30,9 @@ button{
     margin-left: 30rem;
 }
 
-.ailineMinusPlus{
-    display: flex;
-    border-radius: 50%;
-    background-color: white;
-    width: 45rem;
-    height: 45rem;
-    border-color: black;
-
+.icons_settings{
+    width: 50rem;
+    height: 50rem;
 }
 
 .contacts__section{
@@ -53,6 +48,8 @@ button{
 .contacts_item{
     position: relative;
     display: flex;
+    width: 50rem;
+    height: 50rem;
 }
 .contacts_item:hover{
     cursor: pointer;

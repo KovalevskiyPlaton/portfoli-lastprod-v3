@@ -8,6 +8,10 @@
     cursor: pointer;
 }
 
+.arrowStyle__settings{
+    width: 60rem;
+    height: 80rem;
+}
 
 
 @media screen and (max-width: 440px) {
@@ -16,6 +20,4 @@
         width: 56rem;
         height: 120rem;
     }
-
-
 }
