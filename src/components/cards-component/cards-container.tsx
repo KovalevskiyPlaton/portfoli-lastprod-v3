@@ -19,7 +19,7 @@ const arrCard:ReactElement[]= [
         SecondHeaderPage={'Мое первое портфолио на react'}
         SecondContext={'Данный проект разработан с использованием функциональных компонентов'}
         img={card_1}
-        srcProject={`https://kovalevskiyplaton.github.io/`}
+        srcProject={`https://github.com/KovalevskiyPlaton/portfoli-v2.0`}
     />,
     <CardItem
         FirstTitlePage={'Сайт - визитная карточка'}
